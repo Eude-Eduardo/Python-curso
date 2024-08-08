@@ -160,3 +160,14 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+Python/PY/50.py
+Python/PY/copy_down.py
+Python/PY/teste.py
+Python/PY/Copy's/f.py
+Python/PY/Copy's/Gerenciador de arquivos/janelasm.py
+Python/PY/Copy's/Gerenciador de arquivos/Manipulador_gui.py
+Python/PY/Copy's/Gerenciador de arquivos/Modulo.py
+Python/PY/Copy's/Gerenciador de arquivos/original/janelas.py
+Python/PY/Copy's/Gerenciador de arquivos/original/ListaProgramacaoV5.zip
+Python/PY/Copy's/Gerenciador de arquivos/original/manipulador_gui.py
+Python/PY/Copy's/Gerenciador de arquivos/original/manipulador_modulo.py
