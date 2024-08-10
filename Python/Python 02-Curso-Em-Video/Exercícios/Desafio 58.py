@@ -8,12 +8,15 @@ num = random.randrange(1,10)
 player = 12
 tentativa = 0 
 while player != num:
-    player = int(input("Tente: "))
+    player = int(input("Seu palpite: "))
     if player != num:
-        print("--Tente novamente--")
+        if player > num:
+            print("Menos... Tente outra vez")
+        else:
+            print("Mais... Tente outra vez")
     tentativa += 1 
 
 print("Parabéns o número escolhido foi...")
 sleep(0.5)
 print(f"==={num}===")
-print(f"Mas você usou {tentativa} tentativas")
+print(f"você usou {tentativa} tentativas")
