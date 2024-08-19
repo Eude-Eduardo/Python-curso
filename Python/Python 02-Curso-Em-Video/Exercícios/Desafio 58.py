@@ -1,11 +1,10 @@
 import random
-from time import sleep
 
 print("-----Jogo da Adivinhação-----")
-print("Tente adivinhar um número entre [1/10]")
+print("Tente adivinhar um número de [1/10]")
 
 num = random.randrange(1,10)
-player = 12
+player = 0
 tentativa = 0 
 while player != num:
     player = int(input("Seu palpite: "))
@@ -17,6 +16,5 @@ while player != num:
     tentativa += 1 
 
 print("Parabéns o número escolhido foi...")
-sleep(0.5)
 print(f"==={num}===")
 print(f"você usou {tentativa} tentativas")
