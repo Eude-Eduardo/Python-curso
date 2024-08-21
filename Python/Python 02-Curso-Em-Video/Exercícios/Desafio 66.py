@@ -1,4 +1,4 @@
-num = cont = soma = 0
+cont = soma = 0
 
 while True:
     num = int(input("Digite um valor [99 para parar]: "))
