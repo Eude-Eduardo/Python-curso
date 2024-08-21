@@ -8,7 +8,7 @@ nota10 = 10
 nota1 = 1
 quant50 = quant20 = quant10 = quant1 = 0
 
-while saque > 0:
+while True:
     if saque - nota50 >= 0:
         saque -= nota50
         quant50 += 1
@@ -21,6 +21,8 @@ while saque > 0:
     elif saque - nota1 >= 0:
         saque -= nota1
         quant1 += 1
+    if saque == 0:
+        break
 print("=="*20)
 if quant50 > 0:
     print(f"Total de {quant50:2} notas de R$50,00")
@@ -33,5 +35,3 @@ if quant1 > 0:
 
 print("=="*20)
 print("Volte Sempre! Tenha um bom dia!")
-
-    
