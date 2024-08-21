@@ -35,3 +35,30 @@ if quant1 > 0:
 
 print("=="*20)
 print("Volte Sempre! Tenha um bom dia!")
+
+
+# Opção 2
+print("=="*20)
+print(f"{"BANCO":^40}")
+print("=="*20)
+saque = int(input("Que valor quer sacar? R$"))
+total = saque
+ced = 50
+totalced = 0
+while True:
+    if total >= ced:
+        total -= ced
+        totalced +=1
+    else:
+        if totalced > 0: 
+            print(f"Total de {totalced} cédulas de R${ced:.2f}")
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced = 10
+        elif ced == 10:
+            ced = 1
+        totalced = 0
+        if total == 0:
+            break
+print("Volte sempre")
