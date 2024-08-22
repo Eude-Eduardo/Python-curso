@@ -9,17 +9,20 @@ else:
         if num % c == 0:
             primo += 1
         if primo == 2:
-            res = f"é primo e é divisível por "
+            res = f"é primo."
         else:
             res = f"não é primo e é divisível por"
-    print(f"O número {res}", end= " ")  
-
+        primo = 0
+    print(f"O número {num} {res}", end= " ")  
+    
     for c in range(1 , num+1):
         if num % c == 0:
-            primo += 1
-            if primo != 2:
+            if res == "é primo":
+                continue
+            else:
                 n = num/c
                 print(f"{n:.0f}" , end=", "if n != 1 else ".") 
+
         
 
         
