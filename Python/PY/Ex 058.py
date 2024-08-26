@@ -12,12 +12,12 @@ else:
             res = f"é primo."
         else:
             res = f"não é primo e é divisível por"
-        primo = 0
+
     print(f"O número {num} {res}", end= " ")  
     
     for c in range(1 , num+1):
         if num % c == 0:
-            if res == "é primo":
+            if res == f"é primo.":
                 continue
             else:
                 n = num/c
