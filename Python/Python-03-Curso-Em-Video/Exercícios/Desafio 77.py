@@ -1,4 +1,3 @@
-vogais = ("A", "E", "I", "O", "U")
 palavras = ("tanto", "externa", "continuo", "codorna", "surgiu", "sortida", "ditoso", "cumprido", "confiante", "brilhoso", "vetado", "estabelece")
 
 for palavra in palavras:
@@ -6,5 +5,5 @@ for palavra in palavras:
     
     for letras in palavra:
         
-        if letras.upper() in vogais:
+        if letras.upper() in "AEIOU":
             print(f"{letras}", end=" ")
