@@ -1,4 +1,9 @@
-times = ("Fortaleza","Botafogo","Palmeiras","Flamengo","São Paulo","Bahia","Cruzeiro","Atlético-MG","Athletico-PR","Vasco da Gama","internacional","Juventude","Grêmio","Bragatino","Criciúma","Fluminense","Fatal Model vitória","Corinthians","Cuiabá","Atlético-GO")
+times = ("Fortaleza","Botafogo","Palmeiras","Flamengo",
+         "São Paulo","Bahia","Cruzeiro","Atlético-MG",
+         "Athletico-PR","Vasco da Gama","internacional","Juventude",
+         "Grêmio","Bragatino","Criciúma","Fluminense",
+         "Fatal Model vitória","Corinthians","Cuiabá","Atlético-GO")
+
 print(f"Tabela do Brasileirão: ", end="")
 for posicao, tab in enumerate(times):
     print(f"{tab}", end=", "if posicao != 19 else ". ")
@@ -19,4 +24,4 @@ for pos, time in enumerate(sorted(times)):
     print(f"{time}", end=", " if pos != 19 else ". ")
 print("\n======================")
 
-print(f"O Corinthians está atualmente na {times.index("Corinthians")+1}º posição")
+print(f"O Corinthians está atualmente na {times.index("Corinthians")+1}ª posição")
