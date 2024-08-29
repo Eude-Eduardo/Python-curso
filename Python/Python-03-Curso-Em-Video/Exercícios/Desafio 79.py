@@ -1,0 +1,19 @@
+num = []
+n = res = 0
+while True:
+    n = int(input("Digite um valor: "))
+    if num.count(n) == 0:
+        print("Valor adicionado com sucesso...")
+        num.append(n)
+    else:
+        print("Valor duplicado! não será adicionado")
+    res = ""
+    while True:
+        res = str(input("Quer continuar? [S/N]")).strip().upper()[0]
+        if res == "S" or res == "N":
+            break
+    if res == "N":
+        break
+print("=-="*15)
+print(f"Você digitou os valores {num}")
+
