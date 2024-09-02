@@ -10,7 +10,7 @@ while True:
     if res == "N":
         break
 print("=="*20)
-print(f"você digitou os valores: {num}")
+print(f"você digitou {len(num)} valores: {num}")
 print("=="*20)
 print(f"Existem {len(num)} números nesta lista.")
 print("=="*20)
@@ -19,6 +19,6 @@ n.sort(reverse=True)
 print(f"Os números em ordem decrescente são {n}.")
 print("=="*20)
 if num.count(5) == 0:
-    print(f"Não existe número 5 nessa lista.")
+    print(f"O valor 5 não foi encontrado nessa lista.")
 else:
     print(f"O número 5 está na posição {n.index(5)+1} na ordem decrescente ou {num.index(5)+1} na lista comum.")

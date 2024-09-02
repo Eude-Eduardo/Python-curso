@@ -1,5 +1,7 @@
 num = []
 res = ""
+par = []
+impar = []
 while True:
     num.append(int(input("Digite um valor: ")))
     res = ""
@@ -9,19 +11,12 @@ while True:
             break
     if res == "N":
         break
-par = []
-impar = []
 for parImpar in num:
     if parImpar % 2 == 0:
         par.append(parImpar)
     else:
         impar.append(parImpar)
-print("A lista completa é: ", end="")
-for n in num:
-    print(n, end=". ")
-print("\nOs números pares são: ",end="")
-for p in par:
-    print(p, end=". ")
-print("\nOs impares são: ", end="")
-for i in impar:
-    print(i, end=". ")
+print("=="*20)
+print(f"A lista completa é: {num}")
+print(f"Os números pares são: {par}")
+print(f"Os impares são: {impar}")

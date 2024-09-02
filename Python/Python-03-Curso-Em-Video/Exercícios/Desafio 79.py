@@ -8,12 +8,11 @@ while True:
     else:
         print("Valor duplicado! não será adicionado")
     res = ""
-    while True:
+    while res != "S" and res != "N":
         res = str(input("Quer continuar? [S/N]")).strip().upper()[0]
-        if res == "S" or res == "N":
-            break
     if res == "N":
         break
 print("=-="*15)
+num.sort()
 print(f"Você digitou os valores {num}")
 
