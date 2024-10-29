@@ -14,7 +14,7 @@ while True:
     if len(jogos) == 6:
         jogos.sort()
         print(f"Jogo {count}:{jogos}")
-        sleep(1)
+        sleep(0.5)
         jogos.clear()
         count += 1
     if count == numJogos+1:
