@@ -1,6 +1,6 @@
 parImp = [[],[]]
 for c in range(1, 8):
-    num =int(input(f"Digite o {c}º valor: "))
+    num = int(input(f"Digite o {c}º valor: "))
     if num % 2 == 0:
         parImp[0].append(num)
     else:

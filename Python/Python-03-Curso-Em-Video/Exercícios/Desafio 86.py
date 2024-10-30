@@ -9,10 +9,10 @@ for c in range(0, 3):
         else:
             matrix[2].append(num)
 for n in matrix[0]:
-    print(f"[ {n} ]", end=" ")
+    print(f"[ {n:^3} ]", end=" ")
 print()
 for number in matrix[1]:
-    print(f"[ {number} ]", end=" ")
+    print(f"[ {number:^3} ]", end=" ")
 print()
 for numero in matrix[2]:
-    print(f"[ {numero} ]", end=" ")
+    print(f"[ {numero:^3} ]", end=" ")
