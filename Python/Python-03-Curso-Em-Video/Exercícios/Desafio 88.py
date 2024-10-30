@@ -9,8 +9,7 @@ jogos = list()
 count = 1
 while True:
     num = randint(1, 60)
-    if jogos.count(num) == 0:
-        jogos.append(num)
+    jogos.append(num)
     if len(jogos) == 6:
         jogos.sort()
         print(f"Jogo {count}:{jogos}")
