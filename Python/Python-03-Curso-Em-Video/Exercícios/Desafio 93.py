@@ -11,9 +11,9 @@ for k, v in jogador.items():
     print(f"O campo {k} tem o valor {v}")
 print("-=" *20)
 cont = 1
-print(f"O jogador {jogador['Nome']} 5 partidas:")
+print(f"O jogador {jogador['Nome']} jogou {len(jogador['Gols'])} partidas:")
 for i in jogador["Gols"]:
-    print(f"""   => Na partida {cont}, fez {i} Gols""")
+    print(f"""   => Na partida {cont}, fez {i}""", "gol." if i == 1 else "gols.")
     cont += 1
 print(f"Fez um total de {jogador['Total']} Gols")
 print("-=" *20)

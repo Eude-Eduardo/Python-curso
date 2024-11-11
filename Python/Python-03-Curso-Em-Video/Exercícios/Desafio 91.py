@@ -11,12 +11,14 @@ cont = 1
 print("Os Valores Sorteados:")
 for j, d in dados.items():
     print(f"""   O {j} tirou {d}""")
+    sleep(0.5)
 print("-=-"*10)
 print("Ranking dos Jogadores:")
 for d in sorted(dados.values(), reverse=True):
     for j, c in dados.items(): 
         if d == c:
             print(f"""   {cont}º lugar: {j} com {c}""")
+            sleep(0.5)
             del(dados[j])
             break
     cont += 1

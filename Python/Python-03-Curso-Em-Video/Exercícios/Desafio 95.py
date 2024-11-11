@@ -7,10 +7,12 @@ while True:
     for c in range(1, partidas+1):
         temp["Gols"].append(int(input(f"""   Quantos gols {temp['Nome'].capitalize()} fez na partida {c}? """)))
         temp["Total"] = sum(temp['Gols'])   
-    res = str(input("Quer continuar [S/N]: "))
-    print("--"*20)
     jogadores.append(temp.copy())
     temp.clear()
+    res = str(input("Quer continuar [S/N]: ")).strip().upper()
+    while res != "N" and res != "S":
+        res = str(input("Erro! Digite apenas S ou N: ")).strip().upper()
+    print("--"*20)
     if res in "Nn":
         break
 print("Cod", end=" ")
@@ -36,4 +38,4 @@ while True:
         cont = 1
     elif resp > len(jogadores) -1:
         print(f"Erro! não existe Jogador com o código {resp}.")
-print("<<<VOLTE SEMPRE>>>")
+print("<<< VOLTE SEMPRE >>>")
