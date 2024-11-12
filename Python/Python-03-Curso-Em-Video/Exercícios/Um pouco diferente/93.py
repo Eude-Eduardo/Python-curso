@@ -11,6 +11,7 @@ print(jogador)
 print("-=" * 30)
 for k, v in jogador.items():
     print(f"O campo {k} tem valor {v}")
+print("-=" * 30)
 print(f"O jogador {jogador['Nome']} jogou {len(jogador['Gols'])}")
 for i, v in enumerate(jogador["Gols"]):
     print(f"   => Na partida {i}, fez {v} gols")
