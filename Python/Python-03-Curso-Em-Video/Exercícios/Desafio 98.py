@@ -3,7 +3,9 @@ from time import sleep
 
 def firula():
     print("-=" * 25)
-def contador(inicio, fim, passo):
+
+
+def contador(inicio=None, fim=None, passo=None):
     firula()
     print("Contando de 1 até 10 de 1 em 1:")
     for a in range(1, 11):
@@ -19,16 +21,22 @@ def contador(inicio, fim, passo):
     firula()
     print("Agora é a sua vez de personalizar a contagem")
 
-    i = int(input("Inicio: "))
-    f = int(input("Fim: "))
-    r = int(input("Passo:"))
-    inicio = i
-    fim = f
-    passo = r
-
-    for c in range(inicio, fim, passo):
+    
+    inicio = int(input(f"{"Inicio: ":7}"))
+    fim = int(input(f"{"Fim: ":7}"))
+    passo = int(input(f"{"Passo: ":7}"))
+    firula()
+    if passo == 0:
+        passo = 1
+    if passo < 0:
+        passo = -passo
+    if fim < 0:
+        passo = -passo
+    print(f"Contando de {inicio} até {fim} de {-passo} em {-passo}:")
+    for c in range(inicio, fim+1, passo):
         print(c, end=" ", flush=True)
         sleep(0.4)
     print("Fim")
     firula()
-contador(1, 2, 2)
+
+contador()

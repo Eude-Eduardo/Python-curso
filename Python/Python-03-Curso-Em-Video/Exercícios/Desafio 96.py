@@ -3,7 +3,7 @@ def frescurasVisuais(título):
     print(f"{título:^30}")
     print("-=" * 15)
 def area(l, c):
-    print(f"A area do terreno {l}x{c} é de {l * c}m².")
+    print(f"A area do terreno {l}m x {c}m é de {l * c}m².")
 
 
 frescurasVisuais("Controle de Terrenos")
